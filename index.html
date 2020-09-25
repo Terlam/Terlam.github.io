@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Terrell's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #4DA0E3;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #2E4C77;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #9F7269;
+  color: #F8F9F8;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  border-width: 2cm;
+  border-color: #DECCCC;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+/* cards for blog posts*/
+.blog-card {
+  margin-bottom: 30px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+/* social media links*/
+.linkedinimg {
+  color:white;
+  text-align: center;
+  background-color: #0072b1;
+  width: 100%;
+  padding: 20px;
+}
+.linkedinimg:hover {
+  background-color: white;
+  color: #0072b1;
+}
+.mediumimg {
+  color:white;
+  text-align: center;
+  background-color: #00ab6c;
+  width: 100%;
+  padding: 20px;
+}
+.mediumimg:hover {
+  background-color: white;
+  color: black;
+}
+
+.githubimg {
+  color:white;
+  text-align: center;
+  background-color: #24292e;
+  width: 100%;
+  padding: 20px;
+}
+.githubimg:hover {
+  background-color: white;
+  color: black;
+}
+
+.button-text {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+.button-text:hover {
+    text-decoration: none;
+    color: blue;
+    width: 100%;
+    
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #2E4C77;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<!-- Header -->
+<div class="header">
+  <h1>Terrell McKinney</h1>
+  <p>My <b>Chi Codes</b> Portfoio.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="educator.html">Educator</a>
+  <a href="creative.html">Creative</a>
+  <a href="writer.html">Writer</a>
+  <a href="developer.html">Developer</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+    <div class="main">
+      <div class="blog-card">
+        <h2>My Skin is the Same Color in Every Language</h2>
+        <h5>Medium Blog Post, Feb 23, 2019</h5>
+        <div >
+          <img src="images/illustration.jpeg" alt="illustration of man in front of buildings">
+          </div>
+        <p>Illustration by Me</p>
+        <p>In Bogota, the capital of Colombia, a man on the corner said the last thing I thought I’d hear.</p>
+        <br>
+      </div>
+      <div class= "blog-card">
+        <h2>Education Should Be More Creative</h2>
+        <h5>Ideas for Online Learning, Sep 23, 2020</h5>
+        <div><img src="images/studentstaught.jpeg" alt="man in suit teaching a class"></div>
+        <p>Me at a Student Orientation</p>
+        <p>Before the pandemic it had become a common phrase in edcation: "School hasn't changed
+           much in the last hundred years. I've been working with some students in my community 
+           in some exciting ways. To learn about them click the link to learn more. <a href="https://www.youtube.com/watch?v=P3nS5jwOnzY" target="_blank">video</a>.</p>
+      </div>
+    </div>
+    <div class="side">
+    <h2>About Me</h2>
+    <h5>That's me:</h5>
+    <div>
+    <img src="images/terrell.jpg" alt="terrell in green sweater smiling and eating changua">
+    </div>
+    <p>A community oriented web developer focused on education equity.</p>
+    <h3>Follow Me</h3>
+    <p></p>
+    <div class="linkedinimg" style="height:60px;">
+      <a class="button-text" href="https://www.linkedin.com/in/terrellmckinney/">LinkedIn</a></div><br>
+    <div class="mediumimg" style="height:60px;"><a class="button-text" href="https://blog.usejournal.com/@terrellmckinney?source=post_page-----14810d497174--------------------------------">Medium</a></div><br>
+    <div class="githubimg" style="height:60px;"><a class="button-text" href="https://github.com/Terlam">GitHub</a></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
